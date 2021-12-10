@@ -1,0 +1,268 @@
+:root {
+    --blue: #09135c;
+    --white: #ffffff;
+  }
+
+body{
+    background-color: var(--white); 
+    margin: 0;
+}
+.nav-bar{
+    background-color: var(--blue);
+    height: 15vh;
+    width: 100vw;
+}
+.nav-bar img{
+    height: 100%;
+    width: 18vw;    
+    margin-left: 40vw;
+}
+.team{
+    position: absolute;
+    height:15vh;
+    float: left;
+    width: 12vw;
+    color: white;
+    font-size: 1.2vw;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    margin-left: 1vw;
+}
+
+.team span{
+    display: block;
+    margin: auto;
+}
+
+.content-1{
+    padding-top: 2vh;    
+    height: 80vh;
+    width: 100vw;;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color:var(--white);
+    box-shadow: 0 0 4vh var(--blue);
+    z-index: 2;
+    position: relative;
+}
+
+.list{
+    height: 100%;
+    width: 30%;
+    background-color: var(--white);
+}
+.pic{
+    height: 100%;
+    width: 30%;
+    background-color: var(--white);
+}
+
+.veh-details{
+    height: 100%;
+    width: 40%;
+    background-color: var(--white);
+}
+.tit{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    width: 14vw;
+    height: 5vh;
+    margin: 0 auto;
+    color: var(--blue);
+    font-weight: 800;    
+    margin-bottom: 2vh;
+}
+.yt{
+    height: 5vh;
+    width: 4vw;
+}
+
+.plate-details{
+    background-color: var(--blue);
+    border-top-left-radius: 4vh;
+    border-top-right-radius: 4vh;
+    margin-top: 7vh;
+}
+
+.plate-details h2{
+    padding-bottom: 0.5vh;
+}
+
+.cen{
+    color: white;   
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 200;
+}
+#vehicle-snap{
+    height: 45vh;
+    width: 40vw;
+}
+.veh-details > h3{
+    text-align: center;    
+    margin: 0;
+    padding:0;
+    color: var(--white);
+    background-color: var(--blue);    
+    font-weight: 300;
+    height: 4vh;
+    font-size: 1.4vw;
+    border-bottom-left-radius: 1.3vw;
+    border-bottom-right-radius: 1.3vw;
+    margin-top: 2vh;
+}
+
+#plate-no{
+    font-size: 1.6vw;
+    font-weight: 800;
+}
+.tab{
+    height: 30vh;
+    overflow-y: scroll; 
+}
+
+table{
+    width:  25vw;
+    height: 10%;
+    margin: 0 auto;  
+    color: black;
+    background-color: white;
+}
+.st{
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+table td{
+    text-align: center;
+}
+
+tr{
+    height: 4vh;
+    font-size: 1.2vw;
+    border-left: black solid 1px;
+    border-right: black solid 1px;
+}
+tr td:first-child{
+    width: 15vw;
+    font-size: 1.15vw;
+}
+
+tr td:last-child{
+    width: 10vw;
+    font-size: 1vw;
+}
+
+tr:nth-child(even) {
+    background-color: var(--blue);
+    color: white;
+}
+.con{
+    box-shadow: 0 0 2vw var(--blue);
+    height: 65vh;
+    width: 28vw;
+    position: relative;
+    margin  : 0 auto;
+    margin-top: 7vh;
+    border-radius: 1.5vw;
+}
+.info{
+    margin-top: 5vh;
+}
+
+.info, .info td, .info tr{
+    background-color: transparent;
+}
+
+.info td{
+    height: 3vh;
+    width: 4vw;
+    font-size: 1.6 vw;
+    font-weight: 800;
+    text-align: left;
+    color: rgb(250, 28, 28);
+}
+
+.info td:last-child{
+    font-size: 1.4vw;
+    font-weight: 500;
+    background-color: var(--blue);
+    color: var(--white);
+    text-align: center;
+}
+.rep{
+    text-align: center;
+    text-justify: center;
+    font-size: 2vw;
+    color:var(--blue);
+    font-weight: 500;
+    height: 2vw;
+    padding-top: 3vh;        
+}
+.map{
+    display: block;
+    margin: 0 auto;
+    margin-top: 2vh;
+    justify-content: space-around;    
+    width: 25vw;
+    background-color: var(--blue);
+    border-bottom-left-radius: 1.3vw;
+    border-bottom-right-radius: 1.3vw;
+}
+.map h3{
+    text-align: center;
+    margin: 0;
+    padding:0;
+    color: white;
+    font-weight: 300;
+    font-size: 1.4vw;
+}
+iframe{        
+    width: 25vw;
+    height: 24.5vh;
+}
+
+.tab::-webkit-scrollbar{
+    display: none;
+}
+h4{
+    margin: 0 auto;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 7vh;
+}
+.list span{
+    display: inline-block;
+    position: relative;
+    background: #292626;
+    color:white;
+    font-weight: bold;
+    height: 4vh;
+    padding-top: 1vh;
+    font-size: 1.2vw;
+}
+span.num{
+    width: 15vw;
+    font-size: 1.3vw;
+    text-align: center;
+    vertical-align:middle;
+    font-weight: 300;
+    border-top-left-radius: 1.3vw;
+} 
+span.typ{
+    width: 10vw;   
+    font-size: 1.3vw;
+    font-weight: 300;  
+    text-align: center;
+    vertical-align:middle;
+    border-top-right-radius: 1.3vw;
+}

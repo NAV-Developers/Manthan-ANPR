@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANPR</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="script.js">
+    </script>
+</head>
+<header>
+    <div class="nav-bar">
+        <div class="team">
+            <span>Team Name - NAV </span>
+            <span>Idea Title - NAV TRAF</span>
+            <span>PS - ID - INTL-IVA-01</span>
+        </div>
+        <img src="https://manthan.mic.gov.in/assets/new_logo.png" alt="manthan-logo"/>        
+    </div>
+</header>
+<body>
+    <div class="content-1">
+        <!-- container 1 -->
+        <div class="list">
+            <h4><span class="num">Plate No</span><span class="typ">Category</span></h4>
+            <div class="tab">
+                <table class="st">
+                    <tbody id="table-insert">
+                        <tr onclick="highlight(this)" id="selected" style="background-color: #FF0000;color: white;">
+                            <td>DL 33 AY 6324</td>
+                            <td>Bike</td>
+                        </tr>
+                        <tr onclick="highlight(this)">
+                            <td>HR 55 W 4347</td>
+                            <td>Mini Truck</td>
+                        </tr>
+                        <tr onclick="highlight(this)">
+                            <td>DL 12 SD 7561</td>
+                            <td>Bike</td>
+                        </tr>
+                        <tr onclick="highlight(this)">
+                            <td>HR 51 AA 1997</td>
+                            <td>Bike</td>
+                        </tr>
+                        <tr onclick="highlight(this)">
+                            <td>DL 1 LF 7843</td>
+                            <td>Mini Truck</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>            
+            <div class="map">
+                <iframe id="mapset" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31113.345040921085!2d80.20725856963185!3d12.896908217904418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525b79de7f381b%3A0xffbb2dd48afe3f1b!2sSholinganallur%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1638864580816!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <h3>Last Seen Location</h3>
+            </div>
+        </div>
+
+        <!-- Container 2 -->
+        <div class="veh-details">
+            <div class="plate-details">
+                <h3 class="cen">Recognised Plate Number</h3>
+                <h2 class="cen" id="plate-no">MH 01 JA 8300</h2>
+            </div>
+            <img id="vehicle-snap" src="Asset/car.jpg" alt="Vehicle-snap"/>
+            <h3>Snap Of Selected Vehicle</h3>                        
+        </div>
+
+        <!-- container 3 -->
+        <div class="pic">
+            <div class="con">                
+                <h2 class="rep">Generated Report</h2>
+                <table class="info">
+                    <tr>
+                        <td>Location</td>
+                        <td id="location">Sholinganallur</td>
+                    </tr>
+                    <tr>
+                        <td>Vehicle Colour</td>
+                        <td id="color">Bronze</td>
+
+                    </tr>
+                    <tr>
+                        <td>Manufacturer</td>
+                        <td id="manufacturer">Toyota</td>
+                    </tr>
+                    <tr>
+                        <td>Model</td>
+                        <td id="model">Innova</td>
+                    </tr>      
+                    <tr>
+                        <td>Violations</td>
+                        <td id="violations">None</td>
+                    </tr> 
+                    <tr>
+                        <td>Type of Plate</td>
+                        <td id="type">Commercial</td>
+                    </tr> 
+                    <tr>
+                        <td>Last Seen</td>
+                        <td id="ls">CAM-TN-506</td>
+                    </tr> 
+                    <tr>
+                        <td>Body Type</td>
+                        <td id="btype">Mini-Van</td>
+                    </tr>           
+                </table>
+            </div>
+        </div>        
+    </div>
+    <script>
+        set(0);
+    </script>
+</body>
+</html>
+
+
+<!-- 
+    set plate no                            : #plate-no
+    set car image                           : #vehicle-snap
+    insert car date                         : #table-insert
+    Location at which the vehicle was seen  : #location
+    Vehicle colour                          : #color
+    Manufacturer                            : #manufacturer
+    Model                                   : #model
+    iframe map                              : #mapset
+    Violations                              : #violations
+    Type of Plate                           : #type
+    Last Seen                               : #ls
+    Body Type                               : #btype
+ -->
